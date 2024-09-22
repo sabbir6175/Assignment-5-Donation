@@ -26,19 +26,21 @@
                 <div class="navbar flex justify-between items-center">
                     <div class="button">
                         <ul>
-                            <button class="btn w-36 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold text-[#111111]">Blog</button>
+                            <button class="btn w-20 md:w-32 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold text-[#111111]">Blog</button>
                             <!-- <button hidden class="btn bg-[#B4F461] hover:bg-[#B4F461] text-xl font-semibold text-[#111111]">Home</button> -->
                         </ul>
                        
                     </div>
                    
-                    <div class="img flex items-center gap-3 p-1">
-                        <img src="assets/logo.png" alt="">
-                        <p class="text-xl font-semibold">Donate Bangladesh</p>
+                    <div class="hidden">
+                        <div class="img  flex items-center gap-3 p-1">
+                            <img  src="assets/logo.png" alt="">
+                            <p class="  md:text-xl font-semibold">Donate Bangladesh</p>
+                        </div>
                     </div>
-                    <div class="balance flex gap-2">
+                    <div class="balance flex gap-1 md:gap-2">
                         <img src="assets/coin.png" alt="">
-                        <p class="text-xl font-bold">
+                        <p class="text-lg md:text-xl gap-1 font-bold flex ">
                             <span>5500</span>
                             <span>BDT</span>
                         </p>
@@ -49,8 +51,8 @@
         <!-- button -->
         <section class="container m-auto button-section" >
             <div class="py-8 text-center  gap-4 m-auto">
-                <button class="btn w-36 mr-8 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold">Donation</button>
-                <button class="btn w-36 text-[#111111B3] hover:bg-[#111111] hover:text-white text-xl font-semibold">History</button>
+                <button class="btn lg:w-36 mr-8 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold">Donation</button>
+                <button class="btn lg:w-36 text-[#111111B3] hover:bg-[#111111] hover:text-white text-xl font-semibold">History</button>
             </div>
         </section>
     </header>
@@ -69,10 +71,10 @@
                         <span>BDT</span>
                     </p>
                 </button>
-                <h2 class="text-2xl font-bold my-5">Donate for Flood at Noakhali, Bangladesh</h2>
+                <h2 class="text-xl md:text-2xl font-bold my-5">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="text-lg font-normal text-[#111111B3] mb-9"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. </p>
                 <input class="w-full py-3 px-2 border-2 rounded-xl  mb-4" type="text" placeholder="Right Donation Amount" required>
-                <button class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111]  " onclick="my_modal_1.showModal()" >Donate Now</button>
+                <button class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111] " onclick="my_modal_1.showModal()" >Donate Now</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box text-center w-4/12">
                             <img class="text-center inline-block" src="images/success.png" alt="">
@@ -100,10 +102,10 @@
                         <span>BDT</span>
                     </p>
                 </button>
-                <h2 class="text-2xl font-bold my-5">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <h2 class="text-xl md:text-2xl font-bold my-5">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="text-lg font-normal text-[#111111B3] mb-9">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need. </p>
                 <input class="w-full py-3 px-2 border-2 rounded-xl  mb-4" type="text" placeholder="Right Donation Amount" required>
-                <button class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111]  " onclick="my_modal_1.showModal()" >Donate Now</button>
+                <button class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111]" onclick="my_modal_1.showModal()" >Donate Now</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box text-center w-4/12">
                             <img class="text-center inline-block" src="images/success.png" alt="">
@@ -119,7 +121,7 @@
             </div>
         </section>
         <!-- part 3 -->
-        <section class="grid grid-cols-1 lg:grid-cols-2  gap-9 p-7 border-2 rounded-2xl ">
+        <section class="grid grid-cols-1 lg:grid-cols-2  gap-9 p-7 border-2 rounded-2xl mb-9">
             <div class="w-full bg-cover bg-no-repeat">
                 <img class="w-full" src="assets/quota-protest.png" alt="">
             </div>
@@ -131,7 +133,7 @@
                         <span>BDT</span>
                     </p>
                 </button>
-                <h2 class="text-2xl font-bold my-5">Aid for Injured in the Quota Movement</h2>
+                <h2 class="text-xl md:text-2xl font-bold my-5">Aid for Injured in the Quota Movement</h2>
                 <p class="text-lg font-normal text-[#111111B3] mb-9">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input class="w-full py-3 px-2 border-2 rounded-xl  mb-4" type="text" placeholder="Right Donation Amount" required>
                 <button class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111]  " onclick="my_modal_1.showModal()" >Donate Now</button>
