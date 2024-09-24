@@ -31,7 +31,7 @@ function updateBalanceBtn(cardId){
     const donationMainBalance = document.getElementById('main-balance');
     const mainBalance = parseFloat(donationMainBalance.innerText);
 
-    if( inputFieldNumber > mainBalance ){
+    if(inputFieldNumber > mainBalance){
         alert("don't enough money");
         return;
     }
