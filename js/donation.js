@@ -1,18 +1,15 @@
-console.log('some how test ')
-
-
 
 const  donatedCard = document.getElementById('card-donate-from');
 const donationBtn = document.getElementById('Donation-btn');
 const historyCard = document.getElementById('history-from');
-const historyBtn = document.getElementById('History-btn');
+const historyBtn = document.getElementById('history-btn');
 
 
 historyBtn.addEventListener('click', function(){
     donatedCard.classList.add('hidden');
     historyCard.classList.remove('hidden');
     historyBtn.classList.add('bg-lime-400', 'text-black');
-   donationBtn.classList.remove('bg-lime-400')
+    donationBtn.classList.remove('bg-lime-400')
 })
 
 donationBtn.addEventListener('click', function(){
@@ -36,7 +33,7 @@ function updateBalanceBtn(cardId){
 
 
     if(isNaN(inputFieldNumber) || inputFieldNumber <= 0 || inputFieldNumber > mainBalance ){
-        alert("Please check and try again. invalid donation amount");
+        alert("Invalid Donation Amount");
         return;
     }
 

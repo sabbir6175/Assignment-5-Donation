@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-themes="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,22 +24,23 @@
         <!-- navbar section -->
          <section class="bg-[#F9F7F3]">
             <div class="container m-auto py-3  ">
-                <div class="navbar  flex justify-between items-center bg-[#F9F7F3]">
+                <div class="navbar  flex justify-between items-center gap-2 md:gap-4 bg-[#F9F7F3]">
                     <div class="button">
                         <ul>
-                            <button class="btn w-20 md:w-32 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold text-[#111111]">Blog</button>
-                            <!-- <button hidden class="btn bg-[#B4F461] hover:bg-[#B4F461] text-xl font-semibold text-[#111111]">Home</button> -->
+                            <button id="blog-btn" class="btn md:w-28 bg-[#B4F461] hover:bg-lime-500 hover:text-white text-xl font-semibold text-[#111111]"><a href="blog.html">Blog</a></button>
+                           
                         </ul>
                        
                     </div>
-                    <div class="hidden md:block">
-                        <div class="img  flex items-center gap-3 p-1">
-                            <img  src="assets/logo.png" alt="">
-                            <p class="  md:text-xl font-semibold">Donate Bangladesh</p>
+                    
+                    <div class="">
+                        <div class="img  flex items-center gap-1 md:gap-3 p-1">
+                            <img  class="w-10 "  src="assets/logo.png" alt="">
+                            <p class=" text-xl  md:text-2xl font-bold">Donate Bangladesh</p>
                         </div>
                     </div>
-                    <div class="balance flex gap-1 md:gap-2">
-                        <img src="assets/coin.png" alt="">
+                    <div class="balance flex md:gap-2 mr-5">
+                        <img  src="assets/coin.png" alt="">
                         <p class="text-lg md:text-xl gap-1 font-bold flex ">
                             <span id="main-balance">5500</span>
                             <span>BDT</span>
@@ -50,20 +51,20 @@
         </section>
         <!-- button -->
         <section class="container m-auto button-section" >
-            <div class="py-8 text-center  gap-4 m-auto">
-                <button id="Donation-btn" class="btn-item btn bg-lime-400 px-8 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition duration-300 text-lg">Donate</button>
-                <button id="History-btn" class="btn-item btn px-8 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition duration-300 text-lg text-gray-600">History</button>
+            <div class="py-8 text-center flex justify-center gap-4 md:gap-7 m-auto">
+                <button id="Donation-btn" class="btn-item btn bg-lime-400 px-8 py-2 rounded-md font-semibold hover:bg-lime-500 hover:text-white transition duration-300 text-lg">Donate</button>
+                <button id="history-btn" class="btn-item btn px-8 py-2 rounded-md font-semibold hover:bg-lime-500 hover:text-white transition duration-300 text-lg text-gray-600">History</button>
             </div>
         </section>
     </header>
     <!-- main section start -->
     <main class=" container m-auto ">
-        <section id="card-donate-from">
+        <section id="card-donate-from" class=" p-3">
             <!-- part 1 -->
-            <section  class="grid grid-cols-1 lg:grid-cols-2 gap-9 p-7 border-2 rounded-2xl mb-9">
+            <section  class="grid grid-cols-1 md:grid-cols-2 gap-9 p-7 border-2 rounded-2xl mb-9">
                 <!-- image  -->
-                <div class="w-full bg-cover bg-no-repeat">
-                    <img class="w-full" src="assets/noakhali.png" alt="">
+                <div class="w-full h-full bg-cover bg-no-repeat">
+                    <img class="w-full h-full" src="assets/noakhali.png" alt="">
                 </div>
                 <!-- amount donation -->
                 <div class="text-part1">
@@ -82,13 +83,13 @@
                     <!-- input field -->
                     <input id="card1-text-Input" class="w-full  py-3 px-2 border-2 rounded-xl  mb-4" type="text" placeholder="Right Donation Amount" required>
                         <!-- button -->
-                    <button onclick="updateBalanceBtn('card1')" class="btn w-full hover:text-white text-lg font-bold mt-6 text-[#111111]" >Donate Now</button>
+                    <button onclick="updateBalanceBtn('card1')" class="btn w-full bg-[#B4F461] hover:bg-[#111111] hover:text-white text-lg font-bold mt-6 text-[#111111]" >Donate Now</button>
                 </div>
             </section>
             <!-- part 2 -->
-            <section class="grid grid-cols-1 lg:grid-cols-2 gap-9 p-7 border-2 rounded-2xl  mb-9">
-                <div class="w-full bg-cover bg-no-repeat">
-                    <img class="w-full" src="assets/feni.png" alt="">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-9 p-7 border-2 rounded-2xl  mb-9">
+                <div class="w-full h-full bg-cover bg-no-repeat">
+                    <img class="w-full h-full" src="assets/feni.png" alt="">
                 </div>
                 <div class="text-part2">
                     <button class="balance btn">
@@ -107,9 +108,9 @@
                 </div>
             </section>
             <!-- part 3 -->
-            <section class="grid grid-cols-1 lg:grid-cols-2 gap-9 p-7 border-2 rounded-2xl mb-9">
-                <div class="w-full bg-cover bg-no-repeat">
-                    <img class="w-full" src="assets/quota-protest.png" alt="">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-9 p-7 border-2 rounded-2xl mb-9">
+                <div class="w-full h-full bg-cover bg-no-repeat">
+                    <img class="w-full h-full" src="assets/quota-protest.png" alt="">
                 </div>
                 <div class="text-part3">
                     <button class="balance btn">
@@ -131,12 +132,12 @@
             <!-- Successful Massage -->   
             <dialog id="my_modal" class="modal">
                 <div class="modal-box">
-                    <h3 class="text-2xl font-bold text-center">Congrates!</h3>
+                    <h3 class="text-3xl font-bold text-center">Congrates!</h3>
                     <div class="flex justify-center mt-4">
-                        <img src="./assets/coin.png" alt="Coin...">
+                        <img src="assets/coin.png" alt="Coin...">
                     </div>
                     <p class="py-4 text-center text-gray-500">you Have Donate for Humankind</p>
-                    <h3 class="text-xl font-bold text-center">Successfully</h3>
+                    <h3 class="text-2xl font-bold text-center">Successfully</h3>
                     <div class="modal-action flex justify-center">
                         <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
@@ -149,7 +150,7 @@
 
         <!-- history section -->
 
-        <div id="history-from" class=" transactions-section">
+        <div id="history-from" class="hidden transactions-section">
            
         </div>
     </main>
