@@ -28,14 +28,19 @@ function updateBalanceBtn(cardId){
     const donationBalanceTotal = document.getElementById(cardId + '-donation-amount')
     const donationBalance = parseFloat(donationBalanceTotal.innerText);
     // donation main balance
-    const donationMainBalance = document.getElementById('main-balance')
-    const mainBalance = parseFloat(donationMainBalance.innerText)
+    const donationMainBalance = document.getElementById('main-balance');
+    const mainBalance = parseFloat(donationMainBalance.innerText);
 
+    if( inputFieldNumber > mainBalance ){
+        alert("don't enough money");
+        return;
+    }
 
-    if(isNaN(inputFieldNumber) || inputFieldNumber <= 0 || inputFieldNumber > mainBalance ){
+    if(isNaN(inputFieldNumber) || inputFieldNumber <= 0){
         alert("Invalid Donation Amount");
         return;
     }
+    
 
     const newDonationAmount = donationBalance + inputFieldNumber;
      donationBalanceTotal.innerText = newDonationAmount;
