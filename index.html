@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-themes="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 </head >
 <body class="legend">
 
-    <header class=" sticky top-0 bg-white">
+    <header class=" sticky top-0 backdrop-blur-sm ">
         <!-- navbar section -->
          <section class="bg-[#F9F7F3]">
             <div class="container m-auto py-3  ">
@@ -28,12 +28,9 @@
                     <div class="button">
                         <ul>
                             <button id="blog-btn" class="btn md:w-28 bg-[#B4F461] hover:bg-lime-500 hover:text-white text-xl font-semibold text-[#111111]"><a href="blog.html">Blog</a></button>
-                           
                         </ul>
-                       
                     </div>
-                    
-                    <div class="">
+                    <div class="hidden md:block">
                         <div class="img  flex items-center gap-1 md:gap-3 p-1">
                             <img  class="w-10 "  src="assets/logo.png" alt="">
                             <p class=" text-xl  md:text-2xl font-bold">Donate Bangladesh</p>
@@ -47,6 +44,13 @@
                         </p>
                     </div>
                 </div>
+                <div class="flex my-3 justify-center sm:block md:hidden">
+                    <div class="img  flex items-center gap-1 md:gap-3 p-1">
+                        <img  class="w-10 "  src="assets/logo.png" alt="">
+                        <p class="text-2xl font-bold">Donate Bangladesh</p>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- button -->

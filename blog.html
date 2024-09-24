@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +20,17 @@
 </head>
 <body>
     
-    <header class="sticky top-0 bg-white">
+    <header class="sticky z-50 top-0 backdrop-blur-sm">
         <!-- navbar section -->
          <section class="bg-[#F9F7F3]">
             <div class="container m-auto py-3 px-1 md:px-3 ">
                 <div class="navbar  flex justify-between items-center gap-2 md:gap-4 bg-[#F9F7F3]">
                     <div class="button">
                         <ul>
-                            <!-- <button class="btn w-20 md:w-32 bg-[#B4F461] hover:bg-[#111111] hover:text-white text-xl font-semibold text-[#111111]">Blog</button> -->
                             <button id="blog-btn" class="btn md:w-28 bg-[#B4F461] hover:bg-lime-500 px-2 md:px-4 hover:text-white text-base md:text-xl font-semibold text-[#111111]"><a href="index.html">Home</a></button>
                         </ul>
-                       
                     </div>
-                    <div class="">
+                    <div class="hidden md:block">
                         <div class="img  flex items-center gap-1 md:gap-3 p-1">
                             <img  class="w-10 "  src="assets/logo.png" alt="">
                             <p class="  text-xl  md:text-2xl font-bold">Donate Bangladesh</p>
@@ -46,34 +44,40 @@
                         </p>
                     </div>
                 </div>
+               <div class="flex my-3 justify-center sm:block md:hidden">
+                <div class="img  flex items-center gap-1 md:gap-3 p-1">
+                    <img  class="w-10 "  src="assets/logo.png" alt="">
+                    <p class="text-2xl font-bold">Donate Bangladesh</p>
+                </div>
+               </div>
             </div>
         </section>
-
-
-
+    </header>
+    <main>
         <section class="container m-auto px-5 md:px-10 ">
-            <h1 class=" text-3xl md:text-4xl font-extrabold uppercase my-8 text-left">Frequently Asked question</h1>
+        <h1 class=" text-3xl md:text-4xl font-extrabold uppercase my-8 text-left">Frequently Asked question</h1>
 
             <!-- Question and answer -->
-        <div class="text-question-answer">
-            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border  py-4 rounded-lg">
+        <div class="text-question-answer overflow-hidden">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-4 rounded-lg">
                 <div class="collapse-title text-xl  m:text-2xl font-bold">What is the Document object Model (DOM)? </div>
                 <div class="collapse-content">
-                  <p class="text-base font-medium">Answer:
-                    <span>The Document Object Model (DOM) is a structure that represents a webpage like a tree. Each element (such as tags, text, etc.) is a node within this structure. It allows you to change the content and design of the page using JavaScript.</span>
+                  <p class="text-base font-semibold">Answer: The Document Object Model (DOM) is a structure that represents a webpage like a tree. Each element (such as tags, text, etc.) is a node within this structure. It allows you to change the content and design of the page using JavaScript.
                   </p>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border  py-4 rounded-lg">
                 <div class="collapse-title text-xl  m:text-2xl font-bold">How do you select an element from the DOM?</div>
                 <div class="collapse-content ">
-                  <p class="text-base font-medium">Answer:
-                    <span>You can select an element from the DOM using:
-                       <li> getElementById('id'): Selects an element by its ID.</li>
-                        <li> getElementsByClassName('class'): Selects elements by class name.</li>
-                        <li>getElementsByTagName('tag'): Selects elements by tag name.</li> 
-                        <li> querySelector('selector'): Selects the first matching element using a CSS selector.</li>
-                        <li>querySelectorAll('selector'): Selects all matching elements using a CSS selector. </li> 
+                  <p class="text-base font-semibold">Answer: You can select an element from the DOM using:
+                    <span>
+                       <ul  class="list-disc ml-10">
+                        <li>document.getElementById()</li>
+                        <li>document.getElementsByClassName()</li>
+                        <li>document.getElementsByTagName()</li>
+                        <li>document.querySelector()</li>
+                        <li>document.querySelectorAll()</li>
+                       </ul>
                     </span>
                   </p>
                 </div>
@@ -81,15 +85,14 @@
             <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border  py-4 rounded-lg">
                 <div class="collapse-title text-xl  m:text-2xl font-bold">what is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
-                  <p class="text-base font-medium">Answer:
-                    <span>Event delegation is a technique where a single event listener is added to a parent element to manage events from its child elements. This allows for better performance and easier handling of dynamically added elements.</span>
+                  <p class="text-base font-semibold">Answer: Event delegation is a technique where a single event listener is added to a parent element to manage events from its child elements. This allows for better performance and easier handling of dynamically added elements.
                   </p>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border  py-4 rounded-lg">
                 <div class="collapse-title text-xl  m:text-2xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                    <p>Manipulating an element's attributes and styles using the DOM allows developers to dynamically change the appearance and behavior of elements on a web page.
+                    <p class="font-semibold">Manipulating an element's attributes and styles using the DOM allows developers to dynamically change the appearance and behavior of elements on a web page.
                   </p>
                   <p class="font-semibold">1. Manipulating Attributes</p>
                   <ul class="list-disc ml-10">
@@ -106,8 +109,10 @@
                   </ul>
                   </div>
             </div>  
+           
+        </div> 
         </section>
-    </header>
+    </main>
 
 
 
